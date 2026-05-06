@@ -1,0 +1,141 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+}
+
+/* FORM */
+.form-container {
+    width: 300px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* DASHBOARD */
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 120px;   /* adjust for navbar height */
+}
+
+.courses {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);   /* center horizontally */
+
+    width: 80%;                   /* 👈 control width here */
+    max-width: 1000px;           /* optional max limit */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    background: #333;
+    color: white;
+
+    border-radius: 10px;         /* 👈 makes it look nice */
+    margin-top: 10px;
+
+    z-index: 1000;
+}
+
+.logout-btn {
+    margin-left: 15px;
+    padding: 6px 12px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* PROGRESS BAR */
+.progress-bar {
+    width: 300px;
+    background: #ccc;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.progress-fill {
+    background: green;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* LESSONS */
+.lessons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.lesson-card {
+    background: white;
+    padding: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.lesson-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}

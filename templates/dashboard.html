@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 LMS Dashboard</h1>
+
+    <div class="courses">
+        {% for course in courses %}
+            <div class="card">
+                <h3>{{ course.title }}</h3>
+                <a href="/course/{{ course.id }}" class="btn">View Course</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="navbar">
+    <h2>📚 LMS</h2>
+    <div>
+        <span>Welcome, {{ user }}</span>
+        <a href="/logout" class="logout-btn">Logout</a>
+    </div>
+</div>
+
+</body>
+</html>
