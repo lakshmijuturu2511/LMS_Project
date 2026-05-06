@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LMS Project</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            height:100vh;
+
+            background: linear-gradient(135deg,#4facfe,#00f2fe);
+
+            color:white;
+        }
+
+        /* NAVBAR */
+
+        .navbar{
+
+            width:85%;
+
+            margin:25px auto;
+
+            background:#222;
+
+            border-radius:18px;
+
+            padding:20px 40px;
+
+            display:flex;
+
+            justify-content:space-between;
+
+            align-items:center;
+
+            box-shadow:0px 5px 20px rgba(0,0,0,0.3);
+        }
+
+        .logo{
+            font-size:32px;
+            font-weight:bold;
+        }
+
+        .nav-links a{
+
+            color:white;
+
+            text-decoration:none;
+
+            margin-left:25px;
+
+            font-size:18px;
+
+            transition:0.3s;
+        }
+
+        .nav-links a:hover{
+            color:#00f2fe;
+        }
+
+        /* HERO */
+
+        .hero{
+
+            height:75vh;
+
+            display:flex;
+
+            flex-direction:column;
+
+            justify-content:center;
+
+            align-items:center;
+
+            text-align:center;
+
+            padding:20px;
+        }
+
+        .hero h1{
+
+            font-size:70px;
+
+            margin-bottom:25px;
+        }
+
+        .hero p{
+
+            font-size:24px;
+
+            max-width:850px;
+
+            line-height:1.6;
+
+            margin-bottom:45px;
+        }
+
+        .btn{
+
+            background:#007bff;
+
+            color:white;
+
+            text-decoration:none;
+
+            padding:16px 40px;
+
+            border-radius:12px;
+
+            font-size:22px;
+
+            transition:0.3s;
+        }
+
+        .btn:hover{
+
+            background:#0056b3;
+
+            transform:scale(1.05);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+
+        <div class="logo">
+            📚 LMS Project
+        </div>
+
+        <div class="nav-links">
+
+            <a href="/register">Register</a>
+
+            <a href="/login">Login</a>
+
+        </div>
+
+    </div>
+
+    <!-- HERO -->
+
+    <div class="hero">
+
+        <h1>Learning Management System</h1>
+
+        <p>
+            Learn programming, AI, databases, web development,
+            and artificial intelligence with interactive courses.
+        </p>
+
+        <a href="/register" class="btn">
+            Get Started
+        </a>
+
+    </div>
+
+</body>
+
+</html>

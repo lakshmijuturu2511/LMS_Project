@@ -29,14 +29,13 @@ def get_db():
         db.close()
 
 
-# ---------------- HOME ----------------
 @app.get("/", response_class=HTMLResponse)
-def home():
-    return """
-    <h1>LMS Project</h1>
-    <a href='/register'>Register</a><br>
-    <a href='/login'>Login</a>
-    """
+def home(request: Request):
+
+    return templates.TemplateResponse(
+        "index.html",
+        {"request": request}
+    )
 
 
 # ---------------- REGISTER ----------------
